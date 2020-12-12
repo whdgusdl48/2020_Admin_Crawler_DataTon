@@ -8,7 +8,7 @@ o 데이터 분석을 위한 데이터를 직접 수집하며 데이터의 중�
 o Docker, python, node.js를 통하여 Backend의 개념을 넓히고 서버 쪽 부분에 지식을 쌓을 수 있습니다. <br />
 o 팀원들과 대회 진행을 통하여 팀워크를 향상하고 발표 경험을 쌓을 수 있습니다. <br />
 
-## DockerFile Node.js 사용법
+## Docker
 
 1. Docker 설치
 ```
