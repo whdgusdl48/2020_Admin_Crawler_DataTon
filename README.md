@@ -36,11 +36,21 @@ o 팀원들과 대회 진행을 통하여 팀워크를 향상하고 발표 경�
    1등 팀 200,000원 <br /> 2등 팀 150,000원 <br /> 3등 팀 100,000원
 </p>
 
+## 제출방식
+제출은 중간, 최종 2번에 걸쳐서 제출합니다. 이 점에 번거롭게 하여 죄송합니다. <br />
+중간 제출은 현재 진행중인 각자 팀원의 화면 캡처를 기본으로 합니다.<br />
+최종 제출은 저학년은 코드 및 보고서, 발표 유튜브 링크를 제출하시면됩니다. 고학년은 DockerFile, (compose로 실행하셨으면 그 파일도 다 제출하셔야합니다.), 코드, 발표 유튜브 링크입니다. 
+
+## 수상자
+
+12월 23일 18시에 공개됩니다.
+
 ## Docker
 
 1. Docker 설치
 ```
 https://ebbnflow.tistory.com/203 이 사이트를 참고하여 설치해주세요.
+Docker ToolBox는 바탕화면에 진행해주시는게 좋습니다. 관리자 권한이 있는 C 드라이브의 경우에는 Vi editor가 잘 안될 수 있습니다.
 ```
 2. 파이썬을 통한 대회 진행
 
@@ -63,4 +73,18 @@ docker run -it 8888:8888 -v /python jonghyeon9587/admin-crawler => 컨테이너 
 
 기존 설치 라이브러리 : numpy pandas matplotlib BeautifulSoap4 pip3
 
+```
+3. Node.js를 통한 대회 진행
+```
+위에 게시한 Deploy-Docker-Node.js 폴더를 다운받습니다.
+
+다운받은 폴더를 Docker ToolBox 폴더에 넣어줍니다. 
+
+docker-compose-up을 이용해 실행합니다
+
+기본적으로 설치된 라이브러리는 Express, nodemon 이있습니다. 추가적으로 설치하실 라이브러리가 있으시면
+
+Kitematic에 GUI에 들어가셔서 해당 실행하는 컨테이너를 클릭 후 exec를 누르시면 터미널이 나옵니다.
+
+npm install body-parser와 같이 진행하시면 현재 진행하고있는 코드에 자동으로 package.json이 추가됩니다.
 ```
