@@ -1,0 +1,136 @@
+/* public/css/master.css */
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+
+body {
+	font-family: 'Sunflower', 'Open Sans', sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800!important;
+}
+
+.container {
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navbar-custom {
+	padding-top: 30px;
+    padding-bottom: 30px;
+	background-color: rgba(0,0,0,.7);
+	text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+	font-weight: 700;
+	height: 200px;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.navbar-brand {
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 2.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.home {
+	background: #0c2c52;
+	padding-top: 250px;
+	padding-bottom: 60px;
+}
+
+.main_title {
+	font-size: 70px;
+}
+
+.sub_title {
+	font-size: 30px;
+}
+
+.btn-primary {
+    background-color: #2b4f7a;
+    border-color: #2b4f7a;
+}
+
+.btn-primary:hover {
+	background-color: #5b81b1;
+}
+
+.rounded-pill {
+    border-radius: 50rem!important;
+}
+
+.btn-xl {
+    text-transform: uppercase;
+    padding: 0.8rem 4rem;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .1rem;
+}
+
+.list_div {
+	margin-top: 70px;
+	margin-bottom: 70px;
+	margin-left: 50px;
+}
+
+ul.mylist li{
+	list-style: none;
+    padding: 30px 10px 30px 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #efefef;
+    font-size: 40px;
+}
+
+ul.copyright li {
+	list-style: none;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+footer {
+	margin-top: 70px;
+	margin-bottom: 70px;
+}
+
+.specific {
+    font-size: 25px;
+}
+
+.purple {
+    background-color: rgb(74, 55, 105);
+    padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.red {
+    background-color: rgb(105, 55, 55);
+    padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.green {
+    background-color: rgb(55, 105, 82);
+    padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.blue {
+	background: #0c2c52;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}

@@ -1,0 +1,73 @@
+<!-- views/home/about.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../header/head') %>
+  </head>
+  <body>
+    <%- include('../header/nav') %>
+
+    <div class="home text-white text-center">
+      <h1 class="main_title">개요</h1>
+        <p class="sub_title"><br>
+          인터넷이 발달하면서 우리의 삶은 SNS에 많은 영향을 받습니다. <br>
+          최근 인플루언서인 이효리가 BLOO의 "Downtown Baby"를 방송에서 소개하고<br>
+          각종 음악 차트 1위에 진입하기도 했습니다.<br>
+          Datathon에서 해당 팀은 SNS 인플루언서와 음악 플랫폼의 상관관계를 분석하고자 합니다. <br><br>
+        </p>
+    </div>
+
+    <div class="purple text-white text-center">
+      <h1 class="main_title">인스타그램 팔로우 크롤링</h1>
+        <p class="sub_title"><br>
+          인스타그램 인플루언서를 selenium을 이용해 xpath 태그를 <br>
+          크롤링하여 팔로우했습니다. <br>
+          이때, 크롤링 대상은 팔로우 추천 목록에서 진행했습니다. <br>
+          크롤링 제약 조건: (팔로워 1000명 이상 || verified || 인기) <br>
+        </p>
+    </div>
+
+    <div class="red text-white text-center">
+      <h1 class="main_title">인플루언서 스토리 크롤링</h1>
+        <p class="sub_title"><br>
+          팔로우한 스토리를 selenium을 이용해 이미지 캡처 크롤링을 진행했습니다. <br>
+          필요없는 부분을 1차 전처리 과정에서 삭제했습니다. <br>
+          인스타 스토리 이미지를 OCR 오픈소스를 이용해 텍스트를 추출했습니다. <br>
+          결과 : (인플루언서 ID, 음악 제목, 음악 아티스트) <br>
+        </p>
+    </div>
+    
+    <div class="green text-white text-center">
+      <h1 class="main_title">음악 플랫폼 크롤링</h1>
+        <p class="sub_title"><br>
+          selenium beutiful soup 이용해서 크롤링 진행 <br>
+          벅스의 뮤직PD 앨범에서 여러 카테고리에 따라 데이터를 얻고자 합니다. <br>
+          장르, 뮤직 스타일에 따른 사용자가 만든 플레이리스트를 크롤링했습니다. <br>
+          결과 : (음악 제목, 음악 아티스트, 앨범재킷 이미지 소스) <br>
+          크롤링한 결과를 pandas를 이용해 데이터 프레임으로 변환하고 <br>
+          중복되는 값을 제거함으로써 곡 하나가 가지는 여러 장르나 뮤직스타일을 <br>
+          종합하여 엑셀에 저장했습니다. <br>
+        </p>
+    </div>
+            
+    <div class="blue text-white text-center">
+      <p class="sub_title"><br>
+        아래 버튼을 통해 분석한 결과 리스트를 확인해보세요!
+      </p>
+      <a href="/list" class="btn btn-primary btn-xl rounded-pill mt-5">List 바로가기</a>
+    </div>
+
+    
+
+    <!-- Footer -->
+    <footer id="footer">
+      <ul class="copyright">
+        <li>충남대학교 Dataton</li>
+        <li><a href="https://github.com/2020-Crawler-Dataton">Github Source Code Link</a></li>
+        <li>Developer : Seo Seong Deok, Park Gi Deok, Jung You Sung</li>
+      </ul>
+    </footer>
+
+  </body>
+</html>

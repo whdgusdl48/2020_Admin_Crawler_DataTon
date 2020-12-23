@@ -1,0 +1,35 @@
+<!-- views/home/list.ejs -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <%- include('../header/head') %>
+  </head>
+  <body>
+    <%- include('../header/nav') %>
+
+    <div class="home text-white text-center">
+        <h1 class="main_title">분석 결과 List</h1>
+        <p class="sub_title">
+            <br>샤라웃 횟수가 많은 순으로 정렬한 List입니다. <br>
+        </p>
+    </div>
+
+    <div class="list_div">
+        <ul class="mylist">
+            <li>
+                <p>1. Downtown Baby - BLOO</p>
+                <p class="specific">샤라웃 순위 : s_rank 등</p>
+                <p class="specific">샤라웃 횟수 : s_num 회</p>
+                <p class="specific">음악차트 순위 : m_rank 등</p>
+                <p class="specific">관련 태그 : #잔잔한 #새벽</p>
+            </li>
+            <li>목록 아이템 2</li>
+            <li>목록 아이템 3</li>
+            <li>목록 아이템 4</li>
+            <li>목록 아이템 5</li>
+        </ul>
+    </div>
+
+  </body>
+</html>
